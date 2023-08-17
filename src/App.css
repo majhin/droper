@@ -14,8 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,3 +35,40 @@
     transform: rotate(360deg);
   }
 }
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.expanded .options {
+  display: block;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  background-color: #282c34;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.option:hover{
+  background-color: #687287;
+  border-radius: 5px;
+}
+
+.selected-option {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
